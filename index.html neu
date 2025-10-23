@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotlight Vibes OnStage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header mit Logo und Navigation -->
+  <header>
+    <div class="logo">
+      <img src="Spotlight Vibes OnStage.png" alt="Spotlight Vibes OnStage">
+    </div>
+    <nav>
+      <a href="#about">Über uns</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hero-Bereich mit Call-to-Action -->
+  <section class="hero">
+    <h1>Willkommen bei Spotlight Vibes OnStage!</h1>
+    <p>Eine kreative Schauspielgruppe für alle von 14 bis 21 Jahren.</p>
+    <div class="buttons">
+      <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});">Mehr erfahren</button>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Mitmachen</button>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about">
+    <h2>Über uns</h2>
+    <p>Wir sind eine Schauspielgruppe vom Alter 14 bis 21. Wir lernen Schauspiel-Taktiken, entwickeln Szenen und vielleicht auch ein ganzes Stück. Wir würden einmal pro Woche proben (Tag steht noch nicht fest, da wir erst noch weitere Mitglieder benötigen) in Wiershop.</p>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Schreib uns: <a href="mailto:spotlightvibesonstage@outlook.de">spotlightvibesonstage@outlook.de</a></p>
+    <p>Folge uns auf Social Media:</p>
+    <div class="social-links">
+      <a href="#" target="_blank">Instagram</a> |
+      <a href="#" target="_blank">TikTok</a> |
+      <a href="#" target="_blank">YouTube</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Spotlight Vibes OnStage</p>
+  </footer>
+
+</body>
+</html>
