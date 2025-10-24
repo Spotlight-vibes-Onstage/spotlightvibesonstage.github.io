@@ -95,3 +95,36 @@ footer {
   background-color: #6C63FF;
   color: white;
 }
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: #6C63FF;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.social-links a:hover {
+  transform: scale(1.05);
+}
+
+/* Farben für die einzelnen Plattformen */
+.social-links .tiktok { background-color: #010101; }
+.social-links .tiktok:hover { background-color: #333; }
+
+.social-links .instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
+.social-links .instagram:hover { filter: brightness(1.1); }
+
+.social-links .youtube { background-color: #FF0000; }
+.social-links .youtube:hover { background-color: #cc0000; }
