@@ -1,66 +1,168 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spotlight Vibes OnStage</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotlight Vibes OnStage</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f3eddd; /* Beige */
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+    }
+
+    /* Animationen */
+    .fade-in { opacity: 0; animation: fadeIn 1.5s forwards; }
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    .slide-up {
+        opacity: 0;
+        transform: translateY(40px);
+        animation: slideUp 1.2s forwards;
+    }
+    @keyframes slideUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Menü */
+    .menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 32px;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        padding: 15px;
+        z-index: 99;
+    }
+
+    .nav a {
+        display: block;
+        padding: 10px 15px;
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .nav a:hover {
+        background: #f1f1f1;
+    }
+
+    /* Logo */
+    .logo {
+        display: block;
+        margin: 60px auto 25px auto;
+        width: 150px;
+    }
+
+    /* Titel */
+    h1 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 58px;
+        margin: 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    /* Sterne */
+    .star {
+        position: absolute;
+        font-size: 42px;
+        color: #1f2547;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+    }
+
+    .star.left { top: 300px; left: 30%; }
+    .star.right { top: 200px; right: 25%; }
+
+    /* Social Media */
+    .socials {
+        margin-top: 50px;
+        text-align: center;
+        animation: fadeIn 2.5s forwards;
+    }
+
+    .socials a {
+        margin: 0 15px;
+        font-size: 32px;
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    .socials a:hover {
+        transform: scale(1.2);
+    }
+</style>
+
+<script>
+function toggleMenu() {
+    const nav = document.getElementById("nav");
+    nav.style.display = nav.style.display === "block" ? "none" : "block";
+}
+</script>
+
 </head>
+
 <body>
 
-  <!-- Header mit Logo und Navigation -->
-  <header>
-    <div class="logo">
-      <img src="Spotlight Vibes OnStage.png" alt="Spotlight Vibes OnStage">
-    </div>
-    <nav>
-      <a href="#about">Über uns</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
-  </header>
+<!-- Menü -->
+<div class="menu" onclick="toggleMenu()">⋯</div>
 
-  <!-- Hero-Bereich mit Call-to-Action -->
-  <section class="hero">
-    <h1>Willkommen bei Spotlight Vibes OnStage!</h1>
-    <p>Eine kreative Schauspielgruppe für alle von 14 bis 21 Jahren.</p>
-    <div class="buttons">
-      <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});">Mehr erfahren</button>
-      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Mitmachen</button>
-    </div>
-  </section>
-
-  <!-- Über uns -->
-  <section id="about">
-    <h2>Über uns</h2>
-    <p>Wir sind eine Schauspielgruppe vom Alter 14 bis 21. Wir lernen Schauspiel-Taktiken, entwickeln Szenen und vielleicht auch ein ganzes Stück. Wir würden einmal pro Woche proben (Tag steht noch nicht fest, da wir erst noch weitere Mitglieder benötigen) in Wiershop.</p>
-  </section>
-
-  <!-- Kontakt -->
-  <section id="contact">
-    <h2>Kontakt</h2>
-    <p>Schreib uns: <a href="mailto:spotlightvibesonstage@outlook.de">spotlightvibesonstage@outlook.de</a></p>
-    <p>Folge uns auf Social Media:</p>
- 
-    <!-- Social Media Buttons -->
-<div class="social-links">
-  <a href="https://www.tiktok.com/@spotlightvibesonstage?_t=ZN-90nc0yaeiWI&_r=1" target="_blank" class="tiktok">
-    <i class="fa-brands fa-tiktok"></i> TikTok
-  </a>
-  <a href="https://www.instagram.com/deinname" target="_blank" class="instagram">
-    <i class="fa-brands fa-instagram"></i> Instagram
-  </a>
-  <a href="https://www.youtube.com/@deinname" target="_blank" class="youtube">
-    <i class="fa-brands fa-youtube"></i> YouTube
-  </a>
+<div class="nav" id="nav">
+    <a href="#ueber-uns">Über uns</a>
+    <a href="#auftritte">Unsere Auftritte</a>
+    <a href="#infos">Infos für neue Mitglieder</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#team">Team</a>
+    <a href="#projekte">Projekte</a>
+    <a href="#galerie">Galerie (ohne Personen)</a>
+    <a href="#proben">Probenzeiten</a>
+    <a href="#termine">Termine</a>
 </div>
 
-  </section>
+<!-- Sterne -->
+<div class="star left">★</div>
+<div class="star right">★</div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Spotlight Vibes OnStage</p>
-  </footer>
+<!-- Logo -->
+<img src="LOGO-URL-HIER" class="logo" alt="Logo">
+
+<!-- Titel -->
+<h1 class="slide-up">Spotlight Vibes OnStage</h1>
+
+<p class="fade-in">
+    Wir sind eine Schauspielgruppe / Laingruppe für Jugendliche von 14 bis 21 Jahren.
+</p>
+
+<!-- SOCIAL MEDIA -->
+<div class="socials fade-in">
+    <a href="https://www.tiktok.com/@DEINNAME" target="_blank">🎵</a>
+    <a href="https://www.instagram.com/DEINNAME" target="_blank">📸</a>
+    <a href="https://www.youtube.com/@DEINNAME" target="_blank">▶</a>
+</div>
 
 </body>
 </html>
