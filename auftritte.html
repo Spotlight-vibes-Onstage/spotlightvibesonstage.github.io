@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unsere Auftritte</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+body { margin:0; background:#f3eddd; font-family:'Montserrat'; }
+h1 { text-align:center; font-family:'Playfair Display'; font-size:48px; margin-top:60px; }
+p { max-width:800px; margin:20px auto; font-size:18px; text-align:center; }
+
+.menu { position:absolute; top:20px; right:20px; font-size:32px; cursor:pointer; }
+.nav { display:none; position:absolute; top:60px; right:20px; background:white; border-radius:10px; padding:10px; box-shadow:0 4px 15px rgba(0,0,0,0.15); }
+.nav a { display:block; padding:10px; color:black; text-decoration:none; }
+.nav a:hover { background:#f1f1f1; }
+
+.star { position:absolute; font-size:40px; color:#1f2547; opacity:0.4; }
+.star.left { top:200px; left:25%; }
+.star.right { top:120px; right:20%; }
+
+</style>
+
+<script>
+function toggleMenu(){ 
+  const nav=document.getElementById("nav"); 
+  nav.style.display = nav.style.display==="block" ? "none" : "block"; 
+}
+</script>
+
+</head>
+<body>
+
+<div class="menu" onclick="toggleMenu()">⋯</div>
+<div class="nav" id="nav">
+    <a href="index.html">Startseite</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="auftritte.html">Unsere Auftritte</a>
+    <a href="infos.html">Infos</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="team.html">Team</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="proben.html">Probenzeiten</a>
+    <a href="termine.html">Termine</a>
+</div>
+
+<div class="star left">★</div>
+<div class="star right">★</div>
+
+<h1>Unsere Auftritte</h1>
+
+<p>
+Hier findest du eine Übersicht über unsere Auftritte, Shows, Stücke und Events.
+<br><br>
+Diese Seite kann später Fotos, Trailer oder Poster enthalten – alles ohne Gesichter.
+</p>
+
+</body>
+</html>
