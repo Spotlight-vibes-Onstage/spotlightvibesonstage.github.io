@@ -12,19 +12,14 @@
     body {
         margin: 0;
         padding: 0;
-        background: #f3eddd; /* beige */
+        background: #f3eddd; /* Beige */
         font-family: 'Montserrat', sans-serif;
         overflow-x: hidden;
     }
 
     /* Animationen */
-    .fade-in {
-        opacity: 0;
-        animation: fadeIn 1.5s forwards;
-    }
-    @keyframes fadeIn {
-        to { opacity: 1; }
-    }
+    .fade-in { opacity: 0; animation: fadeIn 1.5s forwards; }
+    @keyframes fadeIn { to { opacity: 1; } }
 
     .slide-up {
         opacity: 0;
@@ -32,10 +27,7 @@
         animation: slideUp 1.2s forwards;
     }
     @keyframes slideUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        to { opacity: 1; transform: translateY(0); }
     }
 
     /* Menü */
@@ -44,7 +36,7 @@
         top: 20px;
         right: 20px;
         cursor: pointer;
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .nav {
@@ -53,9 +45,10 @@
         top: 60px;
         right: 20px;
         background: white;
-        border-radius: 10px;
+        border-radius: 12px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         padding: 15px;
+        z-index: 99;
     }
 
     .nav a {
@@ -63,6 +56,8 @@
         padding: 10px 15px;
         color: black;
         text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
     }
 
     .nav a:hover {
@@ -72,31 +67,28 @@
     /* Logo */
     .logo {
         display: block;
-        margin: 50px auto 20px auto;
+        margin: 60px auto 25px auto;
         width: 150px;
-        animation: fadeIn 2s forwards;
     }
 
     /* Titel */
     h1 {
         text-align: center;
         font-family: 'Playfair Display', serif;
-        font-size: 55px;
+        font-size: 58px;
         margin: 0;
-        animation: slideUp 1.5s forwards;
     }
 
     p {
         text-align: center;
         font-size: 20px;
         margin-top: 15px;
-        animation: fadeIn 2s forwards;
     }
 
-    /* Dekosterne */
+    /* Sterne */
     .star {
         position: absolute;
-        font-size: 40px;
+        font-size: 42px;
         color: #1f2547;
         opacity: 0;
         animation: fadeIn 2s forwards;
@@ -105,13 +97,31 @@
     .star.left { top: 300px; left: 30%; }
     .star.right { top: 200px; right: 25%; }
 
+    /* Social Media */
+    .socials {
+        margin-top: 50px;
+        text-align: center;
+        animation: fadeIn 2.5s forwards;
+    }
+
+    .socials a {
+        margin: 0 15px;
+        font-size: 32px;
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    .socials a:hover {
+        transform: scale(1.2);
+    }
 </style>
 
 <script>
-    function toggleMenu() {
-        const nav = document.getElementById("nav");
-        nav.style.display = nav.style.display === "block" ? "none" : "block";
-    }
+function toggleMenu() {
+    const nav = document.getElementById("nav");
+    nav.style.display = nav.style.display === "block" ? "none" : "block";
+}
 </script>
 
 </head>
@@ -126,6 +136,11 @@
     <a href="#auftritte">Unsere Auftritte</a>
     <a href="#infos">Infos für neue Mitglieder</a>
     <a href="#kontakt">Kontakt</a>
+    <a href="#team">Team</a>
+    <a href="#projekte">Projekte</a>
+    <a href="#galerie">Galerie (ohne Personen)</a>
+    <a href="#proben">Probenzeiten</a>
+    <a href="#termine">Termine</a>
 </div>
 
 <!-- Sterne -->
@@ -133,11 +148,21 @@
 <div class="star right">★</div>
 
 <!-- Logo -->
-<img src="LOGO-URL-HIER-EINFÜGEN" class="logo" alt="Logo">
+<img src="LOGO-URL-HIER" class="logo" alt="Logo">
 
-<!-- Startseite -->
-<h1>Spotlight Vibes OnStage</h1>
-<p>Wir sind eine Schauspielgruppe / Laingruppe für Jugendliche von 14 bis 21.</p>
+<!-- Titel -->
+<h1 class="slide-up">Spotlight Vibes OnStage</h1>
+
+<p class="fade-in">
+    Wir sind eine Schauspielgruppe / Laingruppe für Jugendliche von 14 bis 21 Jahren.
+</p>
+
+<!-- SOCIAL MEDIA -->
+<div class="socials fade-in">
+    <a href="https://www.tiktok.com/@DEINNAME" target="_blank">🎵</a>
+    <a href="https://www.instagram.com/DEINNAME" target="_blank">📸</a>
+    <a href="https://www.youtube.com/@DEINNAME" target="_blank">▶</a>
+</div>
 
 </body>
 </html>
