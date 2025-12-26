@@ -8,64 +8,30 @@
   <a href="kontakt.html">Kontakt</a>
 </nav>
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Über uns – Spotlight Vibes OnStage</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-
-<style>
-body { margin:0; background:#f3eddd; font-family:'Montserrat'; }
-h1 { text-align:center; font-family:'Playfair Display'; font-size:48px; margin-top:60px; }
-p { max-width:800px; margin:20px auto; font-size:18px; text-align:center; line-height:1.6; }
-
-.menu { position:absolute; top:20px; right:20px; font-size:32px; cursor:pointer; }
-.nav { display:none; position:absolute; top:60px; right:20px; background:white; border-radius:10px; padding:10px; box-shadow:0 4px 15px rgba(0,0,0,0.15); }
-.nav a { display:block; padding:10px; color:black; text-decoration:none; border-radius:5px; }
-.nav a:hover { background:#f1f1f1; }
-
-.star { position:absolute; font-size:40px; color:#1f2547; opacity:0.4; }
-.star.left { top:200px; left:25%; }
-.star.right { top:120px; right:20%; }
-
-</style>
-
-<script>
-function toggleMenu(){ 
-  const nav=document.getElementById("nav"); 
-  nav.style.display = nav.style.display==="block" ? "none" : "block"; 
-}
-</script>
-
+  <title>Über uns</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="menu" onclick="toggleMenu()">⋯</div>
-<div class="nav" id="nav">
-    <a href="index.html">Startseite</a>
-    <a href="ueber-uns.html">Über uns</a>
-    <a href="auftritte.html">Unsere Auftritte</a>
-    <a href="infos.html">Infos</a>
-    <a href="kontakt.html">Kontakt</a>
-    <a href="team.html">Team</a>
-    <a href="galerie.html">Galerie</a>
-    <a href="proben.html">Probenzeiten</a>
-    <a href="termine.html">Termine</a>
+<nav>
+  <a href="index.html">Start</a>
+  <a href="ueber-uns.html">Über uns</a>
+  <a href="team.html">Team</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="probenzeiten.html">Probenzeiten</a>
+  <a href="termine.html">Termine</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<div class="container">
+  <h1>Über uns</h1>
+  <p>Wir sind Spotlight Vibes OnStage – eine junge, kreative Schauspielgruppe, die …</p>
 </div>
-
-<div class="star left">★</div>
-<div class="star right">★</div>
-
-<h1>Über uns</h1>
-
-<p>
-Wir sind **Spotlight Vibes OnStage**, eine kreative und dynamische Schauspiel- und Theatergruppe für Jugendliche im Alter von 14–21 Jahren.
-<br><br>
-Bei uns geht es um <b>Kreativität, Ausdruck, Teamarbeit</b> und die gemeinsame Liebe zur Bühne.
-</p>
 
 </body>
 </html>
+
 
