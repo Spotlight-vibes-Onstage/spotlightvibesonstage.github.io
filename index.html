@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotlight Vibes OnStage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
 <nav>
   <a href="index.html">Start</a>
   <a href="ueber-uns.html">Über uns</a>
@@ -7,170 +16,16 @@
   <a href="termine.html">Termine</a>
   <a href="kontakt.html">Kontakt</a>
 </nav>
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spotlight Vibes OnStage</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<div class="container">
+  <h1>Spotlight Vibes OnStage</h1>
+  <p>Jung. Kreativ. On and Off Stage.</p>
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: #f3eddd; /* Beige */
-        font-family: 'Montserrat', sans-serif;
-        overflow-x: hidden;
-    }
-
-    /* Animationen */
-    .fade-in { opacity: 0; animation: fadeIn 1.5s forwards; }
-    @keyframes fadeIn { to { opacity: 1; } }
-
-    .slide-up {
-        opacity: 0;
-        transform: translateY(40px);
-        animation: slideUp 1.2s forwards;
-    }
-    @keyframes slideUp {
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Menü */
-    .menu {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        font-size: 32px;
-    }
-
-    .nav {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        padding: 15px;
-        z-index: 99;
-    }
-
-    .nav a {
-        display: block;
-        padding: 10px 15px;
-        color: black;
-        text-decoration: none;
-        font-size: 16px;
-        border-radius: 5px;
-    }
-
-    .nav a:hover {
-        background: #f1f1f1;
-    }
-
-    /* Logo */
-    .logo {
-        display: block;
-        margin: 60px auto 25px auto;
-        width: 150px;
-    }
-
-    /* Titel */
-    h1 {
-        text-align: center;
-        font-family: 'Playfair Display', serif;
-        font-size: 58px;
-        margin: 0;
-    }
-
-    p {
-        text-align: center;
-        font-size: 20px;
-        margin-top: 15px;
-    }
-
-    /* Sterne */
-    .star {
-        position: absolute;
-        font-size: 42px;
-        color: #1f2547;
-        opacity: 0;
-        animation: fadeIn 2s forwards;
-    }
-
-    .star.left { top: 300px; left: 30%; }
-    .star.right { top: 200px; right: 25%; }
-
-    /* Social Media */
-    .socials {
-        margin-top: 50px;
-        text-align: center;
-        animation: fadeIn 2.5s forwards;
-    }
-
-    .socials a {
-        margin: 0 15px;
-        font-size: 32px;
-        text-decoration: none;
-        color: black;
-        transition: 0.2s;
-    }
-
-    .socials a:hover {
-        transform: scale(1.2);
-    }
-</style>
-
-<script>
-function toggleMenu() {
-    const nav = document.getElementById("nav");
-    nav.style.display = nav.style.display === "block" ? "none" : "block";
-}
-</script>
-
-</head>
-
-<body>
-
-<!-- Menü -->
-<div class="menu" onclick="toggleMenu()">⋯</div>
-
-<div class="nav" id="nav">
-    <a href="#ueber-uns">Über uns</a>
-    <a href="#auftritte">Unsere Auftritte</a>
-    <a href="#infos">Infos für neue Mitglieder</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="#team">Team</a>
-    <a href="#projekte">Projekte</a>
-    <a href="#galerie">Galerie (ohne Personen)</a>
-    <a href="#proben">Probenzeiten</a>
-    <a href="#termine">Termine</a>
-</div>
-
-<!-- Sterne -->
-<div class="star left">★</div>
-<div class="star right">★</div>
-
-<!-- Logo -->
-<img src="LOGO-URL-HIER" class="logo" alt="Logo">
-
-<!-- Titel -->
-<h1 class="slide-up">Spotlight Vibes OnStage</h1>
-
-<p class="fade-in">
-    Wir sind eine Schauspielgruppe / Laingruppe für Jugendliche von 14 bis 21 Jahren.
-</p>
-
-<!-- SOCIAL MEDIA -->
-<div class="socials fade-in">
-    <a href="https://www.tiktok.com/@DEINNAME" target="_blank">🎵</a>
-    <a href="https://www.instagram.com/DEINNAME" target="_blank">📸</a>
-    <a href="https://www.youtube.com/@DEINNAME" target="_blank">▶</a>
+  <div class="socials">
+    <a><img src="https://cdn-icons-png.flaticon.com/512/3116/3116490.png"></a>
+    <a><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>
+    <a><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"></a>
+  </div>
 </div>
 
 </body>
