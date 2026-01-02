@@ -4,6 +4,9 @@ body {
   font-family: Arial, sans-serif;
   background: #f2e7d8;
   color: #333;
+  padding-left: 60px;
+  padding-right: 60px;
+
 }
 
 /* Menü */
@@ -49,8 +52,4 @@ nav a:hover {
 
 .socials img:hover {
   transform: scale(1.1);
-}
-body {
-  padding-left: 60px;
-  padding-right: 60px;
 }
