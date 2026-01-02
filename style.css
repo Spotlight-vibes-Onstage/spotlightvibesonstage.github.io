@@ -50,3 +50,7 @@ nav a:hover {
 .socials img:hover {
   transform: scale(1.1);
 }
+body {
+  padding-left: 60px;
+  padding-right: 60px;
+}
